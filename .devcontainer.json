@@ -1,18 +1,9 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
-    "remoteUser": "node",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
-    },
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:1": {}
-    },
-    "postCreateCommand": "npm install -g @devcontainers/cli",
-    "hostRequirements": {
-        "cpus": 4
+      "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+        "version": "latest"
+      }
     }
-}
+  }
+  
